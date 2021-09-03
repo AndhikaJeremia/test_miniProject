@@ -5,6 +5,7 @@ const mongoose = require('mongoose')
 const dotenv = require('dotenv')
 const axios = require('axios')
 const PORT = 2000
+global.CronJob = require('./cron.js')
 
 const app = express()
 dotenv.config()
